@@ -1,3 +1,16 @@
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <Terminal />
+  <About />
 </template>
+
+<script>
+import About from './components/About.vue'
+import Terminal from './components/Terminal.vue'
+
+export default {
+  components: {
+    About,
+    Terminal
+  }
+}
+</script>
