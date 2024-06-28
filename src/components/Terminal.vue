@@ -1,5 +1,7 @@
 <template>
-    <div class="w-1/2 h-full p-4 bg-cyan-950 font-ProFontIIxNerdFontRegular text-slate-300">
+    <div
+        class="w-1/2 h-full p-4 bg-terminalBgDark font-ProFontIIxNerdFontRegular text-terminalTextDark"
+    >
         <p>Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
         <TerminalInputOutput />
     </div>
