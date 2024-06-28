@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: BigBlueTermMonoRegular;
+        src: url(/fonts/BigBlueTermPlusNerdFontMono-Regular.ttf);
+    }
+    @font-face {
+        font-family: ProFontIIxNerdFontRegular;
+        src: url(/fonts/ProFontIIxNerdFontPropo-Regular.ttf);
+    }
+}
