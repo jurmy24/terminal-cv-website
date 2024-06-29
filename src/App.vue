@@ -1,6 +1,6 @@
 <template>
-    <div class="w-screen h-screen flex flex-col">
-        <NavBar />
+    <div class="flex">
+        <SideBar />
         <!-- Main Content -->
         <div class="w-screen h-screen flex items-start justify-center">
             <About />
@@ -12,11 +12,11 @@
 <script>
 import About from './components/About.vue'
 import Terminal from './components/Terminal.vue'
-import NavBar from './components/NavBar.vue'
+import SideBar from './components/SideBar.vue'
 
 export default {
     components: {
-        NavBar,
+        SideBar,
         About,
         Terminal
     }
