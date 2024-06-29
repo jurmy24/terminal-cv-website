@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'class',
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
         extend: {
@@ -32,17 +33,19 @@ export default {
                 }
             },
             colors: {
-                terminalBgDark: '#141619',
+                terminalBgDark: '#1f2937',
                 terminalBgLight: '#f3f3fb',
                 terminalTextDark: '#f3f3fb',
                 terminalTextLight: '#141619',
                 aboutBg: '#f3f3fb',
+                aboutBgDark: '#1f2937',
                 buttonBgDark: '#c6aae8',
                 buttonBgLight: '#b3b4bd'
             },
             fontFamily: {
                 BigBlueTermMono: ['BigBlueTermMonoRegular'],
-                ProFontIIxNerdFontRegular: ['ProFontIIxNerdFontRegular']
+                ProFontIIxNerdFontRegular: ['ProFontIIxNerdFontRegular'],
+                mono: ['Monaco']
             }
         }
     },

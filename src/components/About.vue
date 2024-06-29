@@ -1,9 +1,8 @@
 <template>
-    <div class="w-1/2 h-full p-4 bg-aboutBg font-ProFontIIxNerdFontRegular">
-        <div class="mb-auto m-auto max-w-lg">
+    <div class="w-1/2 h-full p-4 font-mono border-black border-2">
+        <div class="flex flex-col items-center space-y-4">
             <TitleComponent />
-            <p class="font-semibold mb-5">Web Developer</p>
-            <img :src="image" alt="Profile Image" class="w-1/2 mx-auto" />
+            <img :src="image" alt="Profile Image" class="w-1/2" />
             <MediaLinks />
             <p>{{ about }}</p>
         </div>

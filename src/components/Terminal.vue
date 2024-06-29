@@ -1,9 +1,11 @@
 <template>
-    <div
-        class="w-1/2 h-full p-4 bg-terminalBgDark font-ProFontIIxNerdFontRegular text-terminalTextDark"
-    >
-        <p>Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
-        <TerminalInputOutput />
+    <div class="mx-auto h-5/6 shadow-2xl border-black border-2">
+        <div
+            class="h-full p-4 rounded-md shadow-2xl bg-terminalBgDark font-ProFontIIxNerdFontRegular text-terminalTextDark"
+        >
+            <p>Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
+            <TerminalInputOutput />
+        </div>
     </div>
 </template>
 
