@@ -1,10 +1,10 @@
 <template>
-    <div class="flex space-x-4">
+    <div class="flex space-x-10 justify-center border-black border-2">
         <a :href="githubLink" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <GithubIcon />
+            <GithubIcon class="size-10" />
         </a>
         <a :href="linkedinLink" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <LinkedinIcon />
+            <LinkedinIcon class="size-10" />
         </a>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto h-5/6 shadow-2xl border-black border-2">
+    <div class="fixed left-10 h-5/6 shadow-2xl border-black border-2">
         <div
             class="h-full p-4 rounded-md shadow-2xl bg-terminalBgDark font-ProFontIIxNerdFontRegular text-terminalTextDark"
         >
