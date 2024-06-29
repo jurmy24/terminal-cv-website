@@ -3,8 +3,8 @@
         <NavBar />
         <!-- Main Content -->
         <div class="w-screen h-screen flex items-start justify-center">
-            <Terminal />
             <About />
+            <Terminal />
         </div>
     </div>
 </template>

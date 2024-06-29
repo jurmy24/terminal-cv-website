@@ -1,7 +1,7 @@
 <template>
     <!-- o h-screen flex-grow p-4 -->
     <div
-        class="absolute top-20 right-0 w-1/2 h-full overflow-y-auto mr-10 p-4 font-mono border-black border-2"
+        class="absolute top-20 left-10 w-1/2 h-full overflow-y-auto mr-10 p-4 font-mono border-black border-2"
     >
         <div class="flex flex-col space-y-4">
             <TitleComponent />
