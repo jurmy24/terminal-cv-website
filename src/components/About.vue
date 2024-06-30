@@ -1,6 +1,5 @@
 <template>
-    <!-- o h-screen flex-grow p-4 -->
-    <div class="w-1/2 h-full overflow-y-auto mr-10 p-4 font-mono">
+    <div class="w-3/5 h-full p-4 font-mono">
         <div class="flex flex-col space-y-4">
             <TitleComponent />
             <img :src="image" alt="Profile Image" class="w-1/2" />

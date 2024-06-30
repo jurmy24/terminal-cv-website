@@ -2,8 +2,8 @@
     <div class="flex">
         <SideBar :toggleDark="toggleDark" :isDark="useDark" />
         <!-- Main Content -->
-        <div class="w-screen h-screen flex items-start justify-center">
-            <About />
+        <div class="w-screen h-screen p-7">
+            <About class="border-2 border-black" />
             <Terminal />
         </div>
     </div>
@@ -17,7 +17,6 @@ import { useDark, useToggle } from '@vueuse/core'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
-console.log(isDark.value)
 
 export default {
     components: {
