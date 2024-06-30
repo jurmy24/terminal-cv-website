@@ -27,4 +27,18 @@
                 text-buttonText hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
                 cursor-pointer;
     }
+
+    /* For clearer markdown rendering */
+    code {
+        @apply bg-gray-100 text-black px-1.5 py-0.5 rounded-md font-ProFontIIxNerdFontRegular;
+    }
+
+    i {
+        font-style: italic;
+    }
+
+    strong {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
 }

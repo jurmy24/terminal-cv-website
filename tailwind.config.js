@@ -36,29 +36,20 @@ export default {
             },
             colors: {
                 mainBgLight: '#f3f3fb',
-                mainBgDark: '#36393f',
+                mainBgDark: '#303338',
                 mainTextLight: '#141619',
                 mainTextDark: '#f3f3fb',
-                terminalBgDark: '#202225',
-                terminalBgLight: '#f3f3fb',
+                terminalBgDark: '#1E1F22',
+                terminalBgLight: '#E2E5E8',
                 terminalTextDark: '#f3f3fb',
                 terminalTextLight: '#141619',
                 buttonText: '#7e41e4',
                 buttonBgLight: '#d7dbe6',
-                buttonBgDark: '#1f2937',
+                buttonBgDark: '#34373C',
                 buttonBgHoverLight: '#C6AAE8',
                 buttonBgHoverDark: '#4b3e5a',
-                textboxBgLight: '#f3fbfb',
-                gray: {
-                    900: '#202225',
-                    800: '#2f3136',
-                    700: '#36393f',
-                    600: '#4f545c',
-                    400: '#d4d7dc',
-                    300: '#e3e5e8',
-                    200: '#ebedef',
-                    100: '#f2f3f5'
-                }
+                textboxBgLight: '#FFFFFF',
+                textboxBgDark: '#34373C'
             },
             fontFamily: {
                 BigBlueTermMono: ['BigBlueTermMonoRegular'],

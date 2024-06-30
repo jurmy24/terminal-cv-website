@@ -13,6 +13,7 @@
   "dependencies": {
     "@vueuse/core": "^10.11.0",
     "axios": "^1.7.2",
+    "markdown-it": "^14.1.0",
     "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.4.29"
   },
