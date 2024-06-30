@@ -48,6 +48,7 @@ export default {
                 buttonBgDark: '#1f2937',
                 buttonBgHoverLight: '#C6AAE8',
                 buttonBgHoverDark: '#4b3e5a',
+                textboxBgLight: '#f3fbfb',
                 gray: {
                     900: '#202225',
                     800: '#2f3136',

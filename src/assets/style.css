@@ -21,4 +21,10 @@
         @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-terminalTextLight bg-buttonBgHoverLight dark:text-terminalTextDark dark:bg-buttonBgHoverDark text-xs font-ProFontIIxNerdFontRegular
                 transition-all duration-100 scale-0 origin-left;
     }
+
+    .media-button {
+        @apply relative flex items-center justify-center mt-2 mb-2 mx-auto px-4 py-2 space-x-4 shadow-lg bg-buttonBgLight dark:bg-buttonBgDark
+                text-buttonText hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
+                cursor-pointer;
+    }
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed right-10 h-5/6">
+    <div class="h-5/6 my-auto">
         <div
             class="h-full p-4 rounded-md shadow-lg dark:bg-terminalBgDark bg-terminalBgLight font-ProFontIIxNerdFontRegular dark:text-terminalTextDark text-terminalTextLight"
         >

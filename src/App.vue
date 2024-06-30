@@ -2,8 +2,8 @@
     <div class="flex">
         <SideBar :toggleDark="toggleDark" :isDark="useDark" />
         <!-- Main Content -->
-        <div class="w-screen h-screen p-7">
-            <About class="border-2 border-black" />
+        <div class="w-screen h-screen p-7 flex">
+            <About />
             <Terminal />
         </div>
     </div>
