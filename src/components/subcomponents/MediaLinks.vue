@@ -1,5 +1,5 @@
 <template>
-    <div class="flex space-x-10 justify-center border-black border-2">
+    <div class="flex space-x-10 justify-center">
         <a :href="githubLink" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <GithubIcon class="size-10" />
         </a>

@@ -1,18 +1,18 @@
 <template>
     <!-- SideBar -->
     <div
-        class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg"
+        class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-terminalBgLight text-terminalTextLight dark:bg-terminalBgDark dark:text-terminalTextDark shadow-lg"
     >
-        <SideBarIcon text="Toggle dark mode" @click="toggleDark()">
+        <SideBarIcon text="Toggle mode" @click="toggleDark()">
             <v-icon
                 :name="isDark ? 'hi-solid-sun' : 'bi-moon-fill'"
-                :class="['w-6 h-6', isDark ? 'text-yellow-500' : 'text-blue-500']"
+                class="w-6 h-6 dark:text-yellow-500 text-buttonBg"
             />
         </SideBarIcon>
-        <SideBarIcon text="Chatbot Icon">
+        <SideBarIcon text="Visit my Chatbot">
             <v-icon name="fa-robot" class="w-6 h-6" />
         </SideBarIcon>
-        <SideBarIcon text="Rate Icon">
+        <SideBarIcon text="Give a review">
             <v-icon name="md-ratereview" class="w-6 h-6" />
         </SideBarIcon>
     </div>

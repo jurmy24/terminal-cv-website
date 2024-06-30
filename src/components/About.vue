@@ -1,9 +1,9 @@
 <template>
     <!-- o h-screen flex-grow p-4 -->
-    <div class="w-1/2 h-full overflow-y-auto mr-10 p-4 font-mono border-black border-2">
+    <div class="w-1/2 h-full overflow-y-auto mr-10 p-4 font-mono">
         <div class="flex flex-col space-y-4">
             <TitleComponent />
-            <img :src="image" alt="Profile Image" class="w-1/2 border-black border-2" />
+            <img :src="image" alt="Profile Image" class="w-1/2" />
             <MediaLinks />
             <p>{{ about }}</p>
         </div>

@@ -12,13 +12,13 @@
         src: url(/fonts/ProFontIIxNerdFontPropo-Regular.ttf);
     }
     .sidebar-icon {
-        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-gray-800
-                 text-green-800 hover:bg-green-700 rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
-                 cursor-pointer;
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-buttonBgLight dark:bg-buttonBgDark
+                text-buttonText hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
+                cursor-pointer;
     }
 
     .sidebar-tooltip {
-        @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold
+        @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-terminalTextLight bg-buttonBgHoverLight dark:text-terminalTextDark dark:bg-buttonBgHoverDark text-xs font-ProFontIIxNerdFontRegular
                 transition-all duration-100 scale-0 origin-left;
     }
 }
