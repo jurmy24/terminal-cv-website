@@ -3,16 +3,17 @@
         <div class="flex w-1/2 flex-col space-y-4">
             <TitleComponent />
             <!-- Terminal info text box -->
-            <MdViewBox :mdContent="mdTerminalContent" :showHeader="false" class="w-full h-1/3" />
+            <MdViewBox :mdContent="mdTerminalContent" class="w-full h-1/3" />
             <!-- Terminal -->
             <Terminal />
         </div>
         <!-- Markdown content -->
-        <MdViewBox :mdContent="mdContent" class="w-full h-full" />
+        <MdBox :mdContent="mdContent" class="w-full h-full" />
     </div>
 </template>
 
 <script>
+import MdBox from '../components/MdBox.vue'
 import MdViewBox from '../components/MdViewBox.vue'
 import Terminal from '../components/Terminal.vue'
 import TitleComponent from '../components/Title.vue'
@@ -20,9 +21,10 @@ import TitleComponent from '../components/Title.vue'
 export default {
     name: 'Home',
     components: {
-        MdViewBox,
+        MdBox,
         Terminal,
-        TitleComponent
+        TitleComponent,
+        MdViewBox
     },
     async created() {
         try {

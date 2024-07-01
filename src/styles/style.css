@@ -29,12 +29,23 @@
     }
 
     .md-view-box {
-        @apply border border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark overflow-auto rounded-md;
+        @apply h-full border border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md overflow-scroll;
+    }
+
+    .md-box {
+        @apply border border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md overflow-hidden;
+    }
+
+    .md-box .md-view-box {
+        @apply border-none rounded-none;
+    }
+
+    .md-header-box {
+        @apply flex items-center justify-between bg-markdownTopBarLight dark:bg-markdownTopBarDark border-b border-b-borderLight dark:border-b-borderDark p-2;
     }
 
     .md-button {
-        @apply font-ProFontIIxNerdFontRegular text-sm px-4 py-1 rounded-l border border-borderLight dark:border-borderDark bg-markdownTopBarLight dark:bg-markdownTopBarDark  text-terminalTextLight hover:bg-buttonBgHoverLight dark:text-terminalTextDark dark:hover:bg-buttonBgHoverDark
-            transition-all duration-300 ease-linear cursor-pointer;
+        @apply font-ProFontIIxNerdFontRegular text-sm px-4 py-1 rounded-l border border-borderLight dark:border-borderDark  text-terminalTextLight hover:bg-buttonBgHoverLight dark:text-terminalTextDark dark:hover:bg-buttonBgHoverDark transition-all duration-300 ease-linear cursor-pointer;
     }
 
     /* For better markdown rendering */
