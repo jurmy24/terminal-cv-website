@@ -37,8 +37,6 @@ export default {
             colors: {
                 mainBgLight: '#FFFFFF',
                 mainBgDark: '#0E1117',
-                mainTextLight: '#141619',
-                mainTextDark: '#f3f3fb',
                 terminalBgDark: '#161B22',
                 terminalBgLight: '#F5F8FA',
                 terminalTextDark: '#f3f3fb',
@@ -48,8 +46,6 @@ export default {
                 buttonBgDark: '#34373C',
                 buttonBgHoverLight: '#C6AAE8',
                 buttonBgHoverDark: '#4b3e5a',
-                textboxBgLight: '#FFFFFF',
-                textboxBgDark: '#34373C',
                 borderDark: '#30363C',
                 borderLight: '#CFD7DE',
                 markdownBgDark: '#0E1117',
@@ -57,9 +53,7 @@ export default {
                 markdownTextDark: '#E5EDF2',
                 markdownTextLight: '#1F2328',
                 markdownTopBarDark: '#161B22',
-                markdownTopBarLight: '#F5F8FA',
-                topBarButtonBg: '#4B3D5A',
-                topBarButtonBgHover: '#7E41E4'
+                markdownTopBarLight: '#F5F8FA'
             },
             fontFamily: {
                 BigBlueTermMono: ['BigBlueTermMonoRegular'],
