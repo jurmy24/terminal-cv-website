@@ -2,24 +2,14 @@
     <!-- Terminal info text box -->
     <div class="md-view-box">
         <!-- Conditionally Render Header Section -->
-        <div
-            v-if="showHeader"
-            class="flex items-center justify-between bg-markdownTopBarLight dark:bg-markdownTopBarDark border-b border-b-borderLight dark:border-b-borderDark p-2"
-        >
-            <div class="flex">
-                <button class="md-button">Pretty</button>
-                <button class="md-button rounded-l-none rounded-r">Raw</button>
-            </div>
-            <p class="flex-1 text-center text-current">about-me.md</p>
-            <div class="w-20"></div>
-            <!-- Placeholder for spacing to center the text -->
-        </div>
+        <MdHeaderBox v-if="showHeader" />
         <div v-html="markdownToHtml" class="p-4"></div>
     </div>
 </template>
 
 <script>
 import MarkdownIt from 'markdown-it'
+import MdHeaderBox from './MdHeaderBox.vue'
 
 const markdowner = new MarkdownIt({
     // Enable HTML tags in source
@@ -46,6 +36,9 @@ export default {
         markdownToHtml() {
             return markdowner.render(this.mdContent)
         }
+    },
+    components: {
+        MdHeaderBox
     }
 }
 </script>
