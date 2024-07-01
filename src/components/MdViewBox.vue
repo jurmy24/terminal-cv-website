@@ -3,7 +3,7 @@
     <div class="md-view-box">
         <!-- Conditionally Render Header Section -->
         <MdHeaderBox v-if="showHeader" />
-        <div v-html="markdownToHtml" class="p-4"></div>
+        <div v-html="markdownToHtml" class="p-4 md-view"></div>
     </div>
 </template>
 
@@ -34,7 +34,9 @@ export default {
     },
     computed: {
         markdownToHtml() {
-            return markdowner.render(this.mdContent)
+            const renderedHtml = markdowner.render(this.mdContent)
+            console.log(renderedHtml)
+            return renderedHtml
         }
     },
     components: {

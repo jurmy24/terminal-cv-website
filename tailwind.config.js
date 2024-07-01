@@ -53,7 +53,10 @@ export default {
                 markdownTextDark: '#E5EDF2',
                 markdownTextLight: '#1F2328',
                 markdownTopBarDark: '#161B22',
-                markdownTopBarLight: '#F5F8FA'
+                markdownTopBarLight: '#F5F8FA',
+                // Markdown Contents
+                mdCodeBgLight: '#F2F2F2',
+                mdCodeBgDark: '#343941'
             },
             fontFamily: {
                 BigBlueTermMono: ['BigBlueTermMonoRegular'],
