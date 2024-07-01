@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import SideBarIcon from './subcomponents/SideBarIcon.vue'
+import SideBarIcon from './SideBarIcon.vue'
 import { useDark } from '@vueuse/core'
 
 const isDark = useDark()

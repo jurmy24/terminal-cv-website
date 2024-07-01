@@ -11,7 +11,7 @@
 
 <script>
 import axios from 'axios'
-import TerminalInputOutput from './subcomponents/TerminalInputOutput.vue'
+import TerminalInputOutput from './TerminalInputOutput.vue'
 
 export default {
     data() {
