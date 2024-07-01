@@ -1,7 +1,7 @@
 <template>
     <div class="h-5/6 my-auto">
         <div
-            class="h-full p-4 rounded-md shadow-lg dark:bg-terminalBgDark bg-terminalBgLight font-ProFontIIxNerdFontRegular dark:text-terminalTextDark text-terminalTextLight"
+            class="h-full p-4 border border-borderLight dark:border-borderDark rounded-md shadow-lg dark:bg-terminalBgDark bg-terminalBgLight font-ProFontIIxNerdFontRegular dark:text-terminalTextDark text-terminalTextLight"
         >
             <p>Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
             <TerminalInputOutput />

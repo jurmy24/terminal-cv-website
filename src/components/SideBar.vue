@@ -4,7 +4,7 @@
         class="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-terminalBgLight text-terminalTextLight dark:bg-terminalBgDark dark:text-terminalTextDark shadow-lg"
     > -->
     <div
-        class="h-screen w-16 m-0 flex flex-col bg-terminalBgLight text-terminalTextLight dark:bg-terminalBgDark dark:text-terminalTextDark shadow-lg"
+        class="h-screen w-16 m-0 flex flex-col justify-end pb-4 border-r border-borderLight dark:border-borderDark bg-terminalBgLight text-terminalTextLight dark:bg-terminalBgDark dark:text-terminalTextDark shadow-lg"
     >
         <SideBarIcon text="Toggle mode" @click="toggleDark()">
             <v-icon

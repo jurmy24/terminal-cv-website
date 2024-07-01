@@ -12,8 +12,8 @@
         src: url(/fonts/ProFontIIxNerdFontPropo-Regular.ttf);
     }
     .sidebar-icon {
-        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-buttonBgLight dark:bg-buttonBgDark
-                text-buttonText hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
+        @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto border border-borderLight dark:border-borderDark
+                text-purpleHighlight hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-md transition-all duration-300 ease-linear
                 cursor-pointer;
     }
 
@@ -24,8 +24,17 @@
 
     .media-button {
         @apply relative flex items-center justify-center mt-2 mb-2 mx-auto px-4 py-2 space-x-4 shadow-lg bg-buttonBgLight dark:bg-buttonBgDark
-                text-buttonText hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
+                text-purpleHighlight hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear
                 cursor-pointer;
+    }
+
+    .md-view-box {
+        @apply border border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark overflow-auto rounded-md;
+    }
+
+    .md-button {
+        @apply font-ProFontIIxNerdFontRegular text-sm px-4 py-1 rounded-l border border-borderLight dark:border-borderDark bg-markdownTopBarLight dark:bg-markdownTopBarDark  text-terminalTextLight hover:bg-buttonBgHoverLight dark:text-terminalTextDark dark:hover:bg-buttonBgHoverDark
+                transition-all duration-100;
     }
 
     /* For clearer markdown rendering */
