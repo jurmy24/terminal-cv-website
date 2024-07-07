@@ -29,7 +29,7 @@
     }
 
     .md-view-box {
-        @apply h-full border border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md overflow-scroll;
+        @apply h-full border pb-10 border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md overflow-scroll;
     }
 
     .md-box {
