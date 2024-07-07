@@ -1,19 +1,18 @@
 <template>
-    <div class="flex">
+    <div class="flex font-sans">
+        <!-- Side Bar -->
         <SideBar :toggleDark="toggleDark" :isDark="useDark" />
+
         <!-- Main Content -->
-        <div class="w-screen h-screen p-7 flex">
-            <About />
-            <Terminal />
-        </div>
+        <Home />
     </div>
 </template>
 
 <script>
-import About from './components/About.vue'
-import Terminal from './components/Terminal.vue'
-import SideBar from './components/SideBar.vue'
 import { useDark, useToggle } from '@vueuse/core'
+
+import SideBar from './components/SideBar.vue'
+import Home from './views/Home.vue'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
@@ -21,8 +20,7 @@ const toggleDark = useToggle(isDark)
 export default {
     components: {
         SideBar,
-        About,
-        Terminal
+        Home
     },
     data() {
         return {

@@ -35,30 +35,28 @@ export default {
                 }
             },
             colors: {
-                mainBgLight: '#f3f3fb',
-                mainBgDark: '#36393f',
-                mainTextLight: '#141619',
-                mainTextDark: '#f3f3fb',
-                terminalBgDark: '#202225',
-                terminalBgLight: '#f3f3fb',
+                mainBgLight: '#FFFFFF',
+                mainBgDark: '#0E1117',
+                terminalBgDark: '#161B22',
+                terminalBgLight: '#F5F8FA',
                 terminalTextDark: '#f3f3fb',
-                terminalTextLight: '#141619',
-                buttonText: '#7e41e4',
+                terminalTextLight: '#636C76',
+                purpleHighlight: '#7E41E4',
                 buttonBgLight: '#d7dbe6',
-                buttonBgDark: '#1f2937',
+                buttonBgDark: '#34373C',
                 buttonBgHoverLight: '#C6AAE8',
                 buttonBgHoverDark: '#4b3e5a',
-                textboxBgLight: '#f3fbfb',
-                gray: {
-                    900: '#202225',
-                    800: '#2f3136',
-                    700: '#36393f',
-                    600: '#4f545c',
-                    400: '#d4d7dc',
-                    300: '#e3e5e8',
-                    200: '#ebedef',
-                    100: '#f2f3f5'
-                }
+                borderDark: '#30363C',
+                borderLight: '#CFD7DE',
+                markdownBgDark: '#0E1117',
+                markdownBgLight: '#FFFFFF',
+                markdownTextDark: '#E5EDF2',
+                markdownTextLight: '#1F2328',
+                markdownTopBarDark: '#161B22',
+                markdownTopBarLight: '#F5F8FA',
+                // Markdown Contents
+                mdCodeBgLight: '#F2F2F2',
+                mdCodeBgDark: '#343941'
             },
             fontFamily: {
                 BigBlueTermMono: ['BigBlueTermMonoRegular'],

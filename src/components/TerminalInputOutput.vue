@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Ghost from '../icons/Ghost.vue'
+import Ghost from './icons/Ghost.vue'
 export default {
     name: 'TerminalInputOutput',
     components: {
