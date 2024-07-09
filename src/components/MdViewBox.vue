@@ -3,22 +3,22 @@
     <div class="md-view-box">
         <div v-if="showPretty" v-html="markdownToHtml" class="p-4 md-view"></div>
         <div v-else class="p-4">
-            <pre
-                class="whitespace-pre-wrap break-words"
-            ><code class="language-markdown">{{ mdContent }}</code></pre>
+            <pre class="whitespace-pre-wrap break-words">
+                <code ref="codeBlock" class="language-markdown">{{ mdContent }}</code>
+            </pre>
         </div>
     </div>
 </template>
 
 <script>
 import MarkdownIt from 'markdown-it'
-// Using ES6 import syntax
 import hljs from 'highlight.js/lib/core'
 import markdown from 'highlight.js/lib/languages/markdown'
+import '../styles/highlight-custom.css' // Import your custom styles
+import '../styles/md-view-custom.css'
 
 // Then register the languages you need
 hljs.registerLanguage('markdown', markdown)
-hljs.highlightAll()
 
 const markdowner = new MarkdownIt({
     // Enable HTML tags in source
@@ -44,9 +44,59 @@ export default {
     computed: {
         markdownToHtml() {
             const renderedHtml = markdowner.render(this.mdContent)
-            // console.log(renderedHtml)
             return renderedHtml
+        }
+    },
+    mounted() {
+        if (!this.showPretty) {
+            this.$nextTick(() => {
+                this.highlightCode()
+            })
+        }
+    },
+    updated() {
+        if (!this.showPretty) {
+            this.highlightCode()
+        }
+    },
+    methods: {
+        highlightCode() {
+            const codeBlock = this.$refs.codeBlock
+            if (codeBlock) {
+                hljs.highlightElement(codeBlock)
+            }
         }
     }
 }
 </script>
+<style scoped>
+.hljs {
+    /* No styles applied */
+}
+
+.hljs-string,
+.hljs-section,
+.hljs-selector-class,
+.hljs-template-variable,
+.hljs-deletion {
+    /* No styles applied */
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+    /* No styles applied */
+}
+
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+    /* No styles applied */
+}
+</style>

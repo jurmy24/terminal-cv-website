@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* For better markdown rendering */
+    .md-view p {
+        @apply py-2;
+    }
+
+    .md-view code {
+        @apply bg-mdCodeBgLight dark:bg-mdCodeBgDark text-current px-1 py-[0.05rem] rounded-md;
+    }
+
+    .md-view h1 {
+        @apply text-3xl w-full py-4 mb-4 border-b border-borderLight dark:border-borderDark;
+    }
+
+    .md-view h2 {
+        @apply text-2xl w-full py-2 mb-2 border-b border-borderLight dark:border-borderDark;
+    }
+
+    .md-view h3 {
+        @apply text-xl w-full py-2 mb-2 border-b border-borderLight dark:border-borderDark;
+    }
+
+    .md-view ul {
+        @apply list-disc ml-10;
+    }
+
+    .md-view img {
+        @apply cursor-pointer w-1/2 py-4 mx-auto;
+    }
+
+    .md-view i {
+        font-style: italic;
+    }
+
+    .md-view strong {
+        @apply font-bold;
+    }
+
+}
