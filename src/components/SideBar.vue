@@ -9,10 +9,10 @@
                 class="w-6 h-6 dark:text-yellow-500 text-buttonBg"
             />
         </SideBarIcon>
-        <SideBarIcon text="Visit my Chatbot">
+        <SideBarIcon text="Visit my Chatbot" class="cursor-not-allowed">
             <v-icon name="fa-robot" class="w-6 h-6" />
         </SideBarIcon>
-        <SideBarIcon text="Give a review">
+        <SideBarIcon text="Give a review" class="cursor-not-allowed">
             <v-icon name="md-ratereview" class="w-6 h-6" />
         </SideBarIcon>
     </div>
