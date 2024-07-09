@@ -1,7 +1,7 @@
 <template>
     <div class="h-5/6 my-auto overflow-hidden">
         <div
-            class="h-full p-4 border border-borderLight dark:border-borderDark rounded-md shadow-lg dark:bg-terminalBgDark bg-terminalBgLight font-ProFontIIxNerdFontRegular dark:text-terminalTextDark text-terminalTextLight"
+            class="h-full p-4 border border-borderLight dark:border-borderDark rounded-md shadow-lg dark:bg-terminalBgDark bg-terminalBgLight font-ProFontIIxNerdFontRegular dark:text-terminalTextDark text-terminalTextLight overflow-hidden"
         >
             <p>Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
             <TerminalInputOutput :output="output" @submit-command="handleCommand" />

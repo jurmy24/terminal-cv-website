@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen p-4 pt-10 flex space-x-10">
+    <div class="w-full h-full pb-10 p-4 pt-10 flex space-x-10">
         <div class="flex w-1/2 flex-col space-y-4">
             <TitleComponent />
             <!-- Terminal info text box -->

@@ -33,7 +33,7 @@
     }
 
     .md-box {
-        @apply border border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md overflow-hidden;
+        @apply border border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md overflow-y-hidden;
     }
 
     .md-box .md-view-box {
