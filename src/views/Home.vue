@@ -40,7 +40,7 @@ export default {
     methods: {
         async fetchMarkdownContent(filePath) {
             try {
-                console.log('Fetching markdown content from', filePath)
+                // console.log('Fetching markdown content from', filePath)
                 const response = await fetch(filePath)
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`)
