@@ -31,28 +31,28 @@ const handleCommand = (command) => {
             showHelp()
             break
         default:
-            state.output.push(`Unknown command: ${cmd}`)
+            state.output = [`Unknown command: ${cmd}`]
     }
 }
 
 const listFiles = () => {
     const files = Object.keys(getCurrentDirectory())
-    state.output.push(files.join(' '))
+    state.output = files
 }
 
 const changeDirectory = (path) => {
     if (path === '..') {
         if (state.currentPath.length > 1) {
             state.currentPath.pop()
-            state.output.push(`Changed directory to ${state.currentPath.join('/')}`)
+            state.output = [`Changed directory to ${state.currentPath.join('/')}`]
         } else {
-            state.output.push('Already at the root directory')
+            state.output = ['Already at the root directory']
         }
     } else if (getCurrentDirectory()[path] && typeof getCurrentDirectory()[path] === 'object') {
         state.currentPath.push(path)
-        state.output.push(`Changed directory to ${state.currentPath.join('/')}`)
+        state.output = [`Changed directory to ${state.currentPath.join('/')}`]
     } else {
-        state.output.push(`No such directory: ${path}`)
+        state.output = [`No such directory: ${path}`]
     }
 }
 
@@ -60,15 +60,14 @@ const viewFile = (fileName) => {
     const file = getCurrentDirectory()[fileName]
     if (file && typeof file === 'string') {
         state.currentFile = file
-        console.log(state.currentFile)
-        state.output.push(`Viewing file: ${fileName}`)
+        state.output = [`Viewing file: ${fileName}`]
     } else {
-        state.output.push(`No such file: ${fileName}`)
+        state.output = [`No such file: ${fileName}`]
     }
 }
 
 const showHelp = () => {
-    state.output.push('Available commands: ls, dir, cd <path>, view <file>, help')
+    state.output = ['Available commands: ls, dir, cd <path>, view <file>, help']
 }
 
 export default {
