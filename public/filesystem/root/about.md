@@ -1,14 +1,16 @@
-# Hi, I'm Victor 👋
+# Welcome 👋
 
-![Avatar image of Victor in scuba gear](src/assets/victor-avatar.png 'Victor avatar in scuba gear')
+![Avatar image of Victor in scuba gear](/assets/victor-avatar.png 'Victor avatar in scuba gear')
 
-I'm a student of Industrial Engineering and Management at the KTH Royal Institute of Technology, in Stockholm, currently pursuing my Master of Science in Machine Learning. I'm also studying a Bachelors degree in Mechanical Engineering to complement my digital skills with a more hands-on counterpart.
+## Up for a challenge?
 
-This website is just a fun little project of mine about...
+I used to think the terminal was confusing and only used for _hacking into the mainfraime_, so I tried to hide from it. At university it crept up on me, and I learned that in its most basic form it's not all that complicated. That said, I hope that this incredibly **over-engineered CV** can serve as a first step for those fearful of getting technical.
 
-## Connect with Me
+## > Nah
 
--   :octocat: **GitHub**: [[jurmy24](https://github.com/jurmy24)](#)
--   👔 **LinkedIn**: [[victor oldensand](https://www.linkedin.com/in/victor-oldensand/)](#)
+If navigating my CV file system seems boring you can essentially find the same information on my LinkedIn or GitHub accounts.
 
-I'm always open to collaborating on projects and innovative ideas. Feel free to reach out!
+-   👨‍💻 **GitHub**: [jurmy24](https://github.com/jurmy24)
+-   👔 **LinkedIn**: [victor oldensand](https://www.linkedin.com/in/victor-oldensand/)
+
+Anyways, I'm open to collaborating on projects and innovative ideas. Feel free to reach out!

@@ -10,19 +10,29 @@
                 <span class="text-current font-bold text-xl">~</span>
                 <span>{{ item.command }}</span>
             </div>
-            <div v-if="Array.isArray(item.output) && item.output.length > 1">
-                <div v-for="output in item.output" :key="output.name">
-                    <span
-                        :class="output.type === 'folder' ? 'text-purpleHighlight' : 'text-current'"
-                    >
-                        {{ output.name }}
-                    </span>
+
+            <div v-if="Array.isArray(item.output) && item.output.length > 1" class="text-xs">
+                <div v-if="item.output[0].name">
+                    <div v-for="output in item.output" :key="output.name">
+                        <span
+                            :class="
+                                output.type === 'folder' ? 'text-purpleHighlight' : 'text-current'
+                            "
+                        >
+                            {{ output.name }}
+                        </span>
+                    </div>
+                </div>
+                <div v-else>
+                    <div v-for="output in item.output" :key="output">
+                        <p class="text-current py-1">{{ output }}</p>
+                    </div>
                 </div>
             </div>
-            <div v-else-if="Array.isArray(item.output) && item.output.length <= 1">
+            <div v-else-if="Array.isArray(item.output) && item.output.length <= 1" class="text-xs">
                 <span class="text-current">{{ item.output[0] }}</span>
             </div>
-            <div v-else>
+            <div v-else class="text-xs">
                 <span class="text-current">{{ item.output }}</span>
             </div>
         </div>

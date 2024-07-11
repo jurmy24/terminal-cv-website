@@ -26,7 +26,7 @@
                 Raw
             </button>
         </div>
-        <p class="flex-1 text-center text-current">about-me.md</p>
+        <p class="flex-1 text-center text-current">{{ currentFileName }}</p>
         <!-- Placeholder for spacing to center the text -->
         <div class="w-20"></div>
     </div>
@@ -35,6 +35,12 @@
 <script>
 export default {
     name: 'MdHeaderBox',
+    props: {
+        currentFileName: {
+            type: String,
+            required: true
+        }
+    },
     methods: {
         toggleRender(showPretty) {
             this.showPretty = showPretty

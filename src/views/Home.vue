@@ -2,13 +2,13 @@
     <div class="w-full h-full pb-10 p-4 pt-10 flex space-x-10">
         <div class="flex w-1/2 flex-col space-y-4">
             <TitleComponent />
-            <!-- Terminal info text box -->
-            <MdViewBox :mdContent="mdTerminalContent" class="w-full h-1/3" />
             <!-- Terminal -->
             <Terminal @file-changed="fetchMarkdownContent" />
+            <!-- Terminal info text box -->
+            <MdViewBox :mdContent="mdTerminalContent" class="w-full h-1/3" />
         </div>
         <!-- Markdown content -->
-        <MdBox :mdContent="mdContent" class="w-full h-full" />
+        <MdBox :mdContent="mdContent" :currentFileName="currentFileName" class="w-full h-full" />
     </div>
 </template>
 
@@ -29,9 +29,10 @@ export default {
     data() {
         return {
             mdTerminalContent:
-                'Welcome to my **Terminal**! \nYou can navigate around it using `cd` with the path. If you want to view what files exist in each directory you can write `ls` (or `dir`, this is an inclusive space). In this environment, you can open up a file simply using `view`. Type **`help`** if you need more advice. You can also use **`clear`** to empty the terminal.',
+                'For those of you familiar with the terminal, this should be pretty intuitive. For the rest, feel free to type **`help`** into my terminal and press **↵ Enter** to learn about the commands you can write to use it. By the way, if you want to view one of my files, just type **`view`** along with the file name.',
             mdContent: '',
-            error: null
+            error: null,
+            currentFileName: 'about.md'
         }
     },
     async created() {
@@ -41,6 +42,7 @@ export default {
         async fetchMarkdownContent(filePath) {
             try {
                 // console.log('Fetching markdown content from', filePath)
+                this.currentFileName = filePath.split('/')?.pop()
                 const response = await fetch(filePath)
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`)

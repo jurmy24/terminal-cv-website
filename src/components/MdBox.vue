@@ -2,7 +2,7 @@
     <!-- Terminal info text box -->
     <div class="md-box">
         <!-- Conditionally Render Header Section -->
-        <MdHeaderBox @renderToggled="updateShowPretty" />
+        <MdHeaderBox @renderToggled="updateShowPretty" :currentFileName="currentFileName" />
         <MdViewBox :mdContent="mdContent" :showPretty="showPretty"></MdViewBox>
     </div>
 </template>
@@ -15,6 +15,10 @@ export default {
     name: 'MdBox',
     props: {
         mdContent: {
+            type: String,
+            required: true
+        },
+        currentFileName: {
             type: String,
             required: true
         }
