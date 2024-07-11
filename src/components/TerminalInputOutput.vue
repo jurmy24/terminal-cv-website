@@ -1,5 +1,8 @@
 <template>
-    <div class="w-full bg-terminalBg overflow-scroll h-full pb-10">
+    <div
+        class="w-full bg-terminalBg overflow-scroll h-full mb-10 pb-10"
+        ref="terminalContentContainer"
+    >
         <!-- Terminal output-->
         <div v-for="(item, index) in history" :key="index">
             <div class="flex gap-2 items-center justify-start my-2">
@@ -7,7 +10,21 @@
                 <span class="text-current font-bold text-xl">~</span>
                 <span>{{ item.command }}</span>
             </div>
-            <div v-if="item.output">{{ item.output }}</div>
+            <div v-if="Array.isArray(item.output) && item.output.length > 1">
+                <div v-for="output in item.output" :key="output.name">
+                    <span
+                        :class="output.type === 'folder' ? 'text-purpleHighlight' : 'text-current'"
+                    >
+                        {{ output.name }}
+                    </span>
+                </div>
+            </div>
+            <div v-else-if="Array.isArray(item.output) && item.output.length <= 1">
+                <span class="text-current">{{ item.output[0] }}</span>
+            </div>
+            <div v-else>
+                <span class="text-current">{{ item.output }}</span>
+            </div>
         </div>
         <!-- Terminal input-->
         <div class="flex gap-2 items-center justify-start my-2">
@@ -28,6 +45,7 @@
 
 <script>
 import Ghost from './icons/Ghost.vue'
+import { nextTick } from 'vue'
 
 export default {
     name: 'TerminalInputOutput',
@@ -49,9 +67,22 @@ export default {
     methods: {
         emitCommand() {
             let currentCommand = this.command
+            if (currentCommand == 'clear') {
+                this.history = []
+            } else {
+                this.history.push({ command: currentCommand })
+                this.$emit('submit-command', currentCommand)
+            }
             this.command = ''
-            this.history.push({ command: currentCommand })
-            this.$emit('submit-command', currentCommand)
+            this.scrollToBottom()
+        },
+        scrollToBottom() {
+            nextTick(() => {
+                const terminalContent = this.$refs.terminalContentContainer
+                if (terminalContent) {
+                    terminalContent.scrollTop = terminalContent.scrollHeight
+                }
+            })
         }
     },
     watch: {
@@ -59,8 +90,10 @@ export default {
             handler(newOutput) {
                 if (this.history.length > 0) {
                     this.history[this.history.length - 1].output = newOutput
+                    this.scrollToBottom()
                 }
-            }
+            },
+            immediate: true
         }
     }
 }

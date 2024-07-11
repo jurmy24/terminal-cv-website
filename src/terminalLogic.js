@@ -36,7 +36,13 @@ const handleCommand = (command) => {
 }
 
 const listFiles = () => {
-    const files = Object.keys(getCurrentDirectory())
+    const currentDir = getCurrentDirectory()
+    const files = Object.keys(currentDir).map((key) => {
+        return {
+            name: key,
+            type: typeof currentDir[key] === 'object' ? 'folder' : 'file'
+        }
+    })
     state.output = files
 }
 

@@ -3,7 +3,7 @@
         <div
             class="h-full p-4 border border-borderLight dark:border-borderDark rounded-md shadow-lg dark:bg-terminalBgDark bg-terminalBgLight font-ProFontIIxNerdFontRegular dark:text-terminalTextDark text-terminalTextLight overflow-hidden"
         >
-            <p>Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
+            <p class="h-min-12">Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
             <TerminalInputOutput :commandOutput="output" @submit-command="handleCommand" />
         </div>
     </div>
