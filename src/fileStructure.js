@@ -9,7 +9,8 @@ export const fileSystem = {
             'about-me.md': 'filesystem/root/cv/about-me.md',
             'education.md': 'filesystem/root/cv/education.md',
             'experience.md': 'filesystem/root/cv/experience.md',
-            'skills.md': 'filesystem/root/cv/skills.md'
+            'skills.md': 'filesystem/root/cv/skills.md',
+            'interests.md': 'filesystem/root/cv/interests.md'
         },
         projects: {
             'terminal-website.md': 'filesystem/root/projects/terminal-website.md',
