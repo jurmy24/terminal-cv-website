@@ -47,8 +47,4 @@
     .md-button {
         @apply font-ProFontIIxNerdFontRegular text-sm px-4 py-1 rounded-l border border-borderLight dark:border-borderDark  text-terminalTextLight hover:bg-buttonBgHoverLight dark:text-terminalTextDark dark:hover:bg-buttonBgHoverDark transition-all duration-300 ease-linear cursor-pointer;
     }
-
-    .terminal-output {
-        @apply my-2;
-    }
 }

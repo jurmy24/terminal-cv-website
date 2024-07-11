@@ -29,7 +29,7 @@ export default {
     data() {
         return {
             mdTerminalContent:
-                'Welcome to my **Terminal**! \nYou can navigate around it using `cd` with the path. If you want to view what files exist in each directory you can write `ls` (or `dir`, this is an inclusive space). In this environment, you can open up a file simply using `view`. Type **`help`** if you need more advice.',
+                'Welcome to my **Terminal**! \nYou can navigate around it using `cd` with the path. If you want to view what files exist in each directory you can write `ls` (or `dir`, this is an inclusive space). In this environment, you can open up a file simply using `view`. Type **`help`** if you need more advice. You can also use **`clear`** to empty the terminal.',
             mdContent: '',
             error: null
         }

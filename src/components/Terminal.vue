@@ -20,6 +20,7 @@ export default {
             currentDate: new Date().toLocaleString(),
             ipAddress: 'loading...', // Default value while fetching
             state: terminalLogic.state,
+            currentFile: terminalLogic.state.currentFile,
             output: terminalLogic.state.output
         }
     },
@@ -42,12 +43,12 @@ export default {
         handleCommand(command) {
             terminalLogic.handleCommand(command)
             this.output = [...this.state.output] // Trigger reactivity
+            this.currentFile = this.state.currentFile // Trigger reactivity
         }
     },
     watch: {
-        'state.currentFile': {
+        currentFile: {
             handler(currentFile) {
-                console.log('New file evoked by handler:', currentFile)
                 this.$emit('file-changed', currentFile)
             },
             immediate: true
