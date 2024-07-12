@@ -1,13 +1,13 @@
 <template>
-    <div class="flex font-sans h-screen w-screen">
+    <div class="flex font-sans md:h-screen h-full w-full">
         <!-- Side Bar -->
-        <SideBar :toggleDark="toggleDark" :isDark="useDark" class="" />
-        <div class="ml-16 flex flex-col">
+        <SideBar :toggleDark="toggleDark" :isDark="useDark" />
+        <div class="md:ml-16 md:mt-0 mt-16 ml-0 flex flex-col md:w-full">
             <!-- Main Content -->
             <Home />
             <!-- Copyright footer -->
             <footer
-                class="fixed w-full h-6 bottom-1 text-left px-4 text-markdownTextLight dark:text-markdownTextDark text-sm"
+                class="md:fixed w-full h-6 md:bottom-1 text-left px-4 text-markdownTextLight dark:text-markdownTextDark text-sm"
             >
                 &copy; 2024 Victor Oldensand.
             </footer>
@@ -20,6 +20,7 @@ import { useDark, useToggle } from '@vueuse/core'
 
 import SideBar from './components/SideBar.vue'
 import Home from './views/Home.vue'
+import { useWindowSize } from '@vueuse/core'
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
@@ -32,7 +33,8 @@ export default {
     data() {
         return {
             toggleDark,
-            useDark
+            useDark,
+            width: useWindowSize().width
         }
     }
 }

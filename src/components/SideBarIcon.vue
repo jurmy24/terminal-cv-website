@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar-icon group">
         <slot></slot>
-        <span class="sidebar-tooltip group-hover:scale-100">{{ text }}</span>
+        <span class="sidebar-tooltip group-hover:scale-100 md:block hidden">{{ text }}</span>
     </div>
 </template>
 

@@ -18,8 +18,8 @@
     }
 
     .sidebar-tooltip {
-        @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-terminalTextLight bg-buttonBgHoverLight dark:text-terminalTextDark dark:bg-buttonBgHoverDark text-xs font-ProFontIIxNerdFontRegular
-                transition-all duration-100 scale-0 origin-left;
+        @apply absolute w-auto p-2 m-2 min-w-max md:left-14 left-0 md:top-0 top-14 rounded-md shadow-md text-terminalTextLight bg-buttonBgHoverLight dark:text-terminalTextDark dark:bg-buttonBgHoverDark text-xs font-ProFontIIxNerdFontRegular
+                transition-all duration-100 scale-0 md:origin-left origin-top;
     }
 
     .media-button {
@@ -29,7 +29,7 @@
     }
 
     .md-view-box {
-        @apply h-full border pb-10 border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md overflow-scroll;
+        @apply h-full border pb-10 border-borderLight dark:border-borderDark bg-markdownBgLight dark:bg-markdownBgDark text-markdownTextLight dark:text-markdownTextDark rounded-md md:overflow-scroll;
     }
 
     .md-box {

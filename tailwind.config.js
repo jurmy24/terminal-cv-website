@@ -8,6 +8,7 @@ export default {
         extend: {
             animation: {
                 typewriter: 'typewriter 1.5s steps(16) forwards',
+                typewriterSmall: 'typewriter 1.5s steps(12) forwards',
                 caret: 'typewriter 1.5s steps(16) forwards, blink 1s steps(16) infinite 2s'
             },
             keyframes: {
