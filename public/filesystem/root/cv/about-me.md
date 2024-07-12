@@ -10,7 +10,7 @@ I am a 🇳🇴 Norwegian and 🇸🇪 Swedish engineering student that grew up 
 
 ## What I'm doing
 
-I just finished up a Master in machine learning at KTH (under the 5-year industrial engineering and management program). Currently I'm finishing a second bachelors in mechanical engineering at KTH to complement my digital skills and management theory with a more hands-on counterpart.
+I just finished up a Master in machine learning at KTH (under the 5-year industrial engineering and management program). Currently I'm finishing a second bachelors in mechanical engineering at KTH to complement my digital skills and management theory with a more hands-on counterpart. I'm also working on a non-profit project I started called Twiga and a startup called Utter.
 
 ## How can you talk to me?
 

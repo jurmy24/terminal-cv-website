@@ -1,37 +1,45 @@
 # Skills
 
-## Front-End Development
+## 🔧 Back-End Development
 
--   **VueJS**
--   **TailwindCSS**
+-   AWS
+    -   Lambda 🚀
+    -   Bedrock 🏞️
+    -   OpenSearch Service 🔍
+-   NestJS 🌐
+-   Python Flask 🐍
 
-## Back-End Development
+## 🗄️ Databases
 
--   **AWS**
-    -   Lambda
-    -   Bedrock
-    -   OpenSearch Service
--   **ElasticSearch Vector Database**
--   **ChromaDB Vector Database**
+-   ElasticSearch Vector Database 📚
+-   ChromaDB Vector Database 💾
 
-## Mobile Development
+## 🎨 Front-End Development
 
--   **Swift**
--   **React Native**
+-   VueJS 🖼️
+-   TailwindCSS 💅
+-   React (but just a little) ⚛️
 
-## CAD Software
+## 📱 Mobile Development
 
--   **NX and SolidEdge CAD**
+-   Swift 🍏
+-   React Native 📲
 
-## Productivity Tools
+## 🛠️ CAD Software
 
--   **Notion**
+-   NX 🧩
+-   SolidEdge 🖥️
 
-## Emerging Technologies
+## 📂 Productivity Tools
 
--   **Retrieval-Augmented Generation**
--   **LLMs**
+-   Notion 🗒️
+-   Google Drive 🌐
+-   Microsoft Suite 💼
+-   Monday.com 📅
 
-## Chatbots
+## 🚀 Emerging Technologies
 
--   **WhatsApp Bots**
+-   Retrieval-Augmented Generation (RAG) 🧠
+-   LLMs (Large Language Models) 🤖
+
+I'm probably forgetting some stuff but I'll add that over time.
