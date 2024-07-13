@@ -1,6 +1,6 @@
 <template>
     <div
-        class="fixed md:h-screen md:w-16 h-16 w-screen m-0 flex md:flex-col flex-row justify-end md:pb-4 pb-0 md:pr-0 pr-4 md:border-r md:border-b-0 border-b border-borderLight dark:border-borderDark bg-terminalBgLight text-terminalTextLight dark:bg-terminalBgDark dark:text-terminalTextDark shadow-lg"
+        class="fixed z-50 md:h-screen md:w-16 h-16 w-screen m-0 flex md:flex-col flex-row justify-end md:pb-4 pb-0 md:pr-0 pr-4 md:border-r md:border-b-0 border-b border-borderLight dark:border-borderDark bg-terminalBgLight text-terminalTextLight dark:bg-terminalBgDark dark:text-terminalTextDark shadow-lg"
     >
         <SideBarIcon text="Toggle mode" @click="toggleDark()" class="mx-2">
             <v-icon

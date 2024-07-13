@@ -12,7 +12,7 @@
         <div v-else class="flex flex-col space-y-4 align-middle">
             <TitleComponent />
             <!-- Terminal info text box -->
-            <MdViewBox :mdContent="mdTerminalContent" class="w-full" />
+            <MdViewBox :mdContent="mdTerminalContent" class="w-full pb-0" />
         </div>
         <!-- Markdown content -->
         <MdBox :mdContent="mdContent" :currentFileName="currentFileName" class="w-full h-full" />
@@ -73,7 +73,7 @@ export default {
             handler(newWidth) {
                 if (newWidth < 768) {
                     this.mdTerminalContent =
-                        '# Welcome! 😎\n If you want to use my terminal please visit me on a larger screen.'
+                        "# Welcome! 😎\n If you want to use my terminal please visit on a larger screen. You could give it a shot in landscape mode but I wouldn't recommend it. Who uses a terminal on their phone anyways?"
                 } else {
                     this.mdTerminalContent =
                         'For those of you familiar with the terminal, this should be pretty intuitive. For the rest, feel free to type **`help`** into my terminal and press **↵ Enter** to learn about the commands you can write to use it. By the way, if you want to view one of my files, just type **`view`** along with the file name.'
