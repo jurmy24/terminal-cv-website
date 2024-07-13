@@ -1,6 +1,6 @@
 # 🦒 Twiga: Empowering Tanzanian Education with AI
 
-![Twiga Chatbot](assets/twiga-screenshot.jpeg)
+![Twiga Chatbot](/terminal-cv-website/assets/twiga-screenshot.jpeg)
 
 Twiga is a WhatsApp chatbot designed specifically for Tanzanian teachers. I made this as a part of my master thesis project at KTH, aimed at enhancing the educational experience through the integration of LLMs and RAG.
 
@@ -23,7 +23,7 @@ The technical development of Twiga involved several key components:
 
 ## Field Study
 
-![Field Study](assets/public-school.png)
+![Field Study](/terminal-cv-website/assets/public-school.png)
 
 I did a field study in Tanzanian secondary schools to test and conceptualize the chatbot. Teachers from various schools participated, providing valuable feedback that guided the development and enhancement of the chatbot. This field study was crucial in understanding the practical needs and challenges faced by educators in Tanzania.
 

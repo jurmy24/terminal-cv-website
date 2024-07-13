@@ -1,6 +1,6 @@
 # Welcome 👋
 
-![Avatar image of Victor in scuba gear](/assets/victor-avatar.png 'Victor avatar in scuba gear')
+![Avatar image of Victor in scuba gear](/terminal-cv-website/assets/victor-avatar.png 'Victor avatar in scuba gear')
 
 ## Up for a challenge?
 

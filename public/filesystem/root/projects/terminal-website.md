@@ -4,4 +4,4 @@ This is the project you're currently looking at. It's a responsive website built
 
 In case you're still confused here's a screenshot.
 
-![Terminal CV Screenshot](assets/terminal-cv-screenshot.jpeg)
+![Terminal CV Screenshot](/terminal-cv-website/assets/terminal-cv-screenshot.jpeg)

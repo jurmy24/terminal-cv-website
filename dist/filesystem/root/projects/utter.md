@@ -1,4 +1,4 @@
-![Utter Logo](assets/utter-logo.png)
+![Utter Logo](/terminal-cv-website/assets/utter-logo.png)
 
 ## Project Overview
 
@@ -13,7 +13,7 @@ At Utter, we've designed an interactive storytelling concept that leverages inte
 -   **Initial Versions**: We have developed two versions of the app, one using Swift and another on React Native with a NestJS backend.
 -   **Current Focus**: Pivoting towards storytelling to create a more immersive and effective language learning experience.
 
-![Utter Screenshot](assets/utter-screenshot.png)
+![Utter Screenshot](/terminal-cv-website/assets/utter-screenshot.png)
 
 ## Meet the Team
 
