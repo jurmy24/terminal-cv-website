@@ -4,7 +4,7 @@
 
 ## Up for a challenge?
 
-I used to think the terminal was confusing and only used for _hacking into the mainfraime_, so I tried to hide from it. At university it crept up on me, and I learned that in its most basic form it's not all that complicated. That said, I hope that this incredibly **over-engineered CV** can serve as a first step for those fearful of getting technical.
+I used to think the terminal was confusing and only used for _hacking into the mainfraime_, so I tried to avoid it. At university it crept up on me, and I learned that in its most basic form it's not all that complicated. That said, I hope that this incredibly **over-engineered CV** can serve as a first step for those fearful of getting technical.
 
 ## > Nah
 
