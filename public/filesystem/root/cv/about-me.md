@@ -6,7 +6,7 @@ This is, in-fact, a CV so it will all be about me.
 
 I am a 🇳🇴 Norwegian and 🇸🇪 Swedish engineering student that grew up in several countries in Europe, together with my two older sisters and parents 👫. Born in Norway, grew up in Luxembourg, and finished high school and uni in Sweden. There have also been a few short stints where I lived in 🇩🇰 Denmark, 🇨🇭 Switzerland (exchange), and 🇹🇿 Tanzania too. In the future I'd like to live somewhere like Switzerland because just look at that (AI-generated but the fact still holds):
 
-![Dall-E image of Swiss Alps](/terminal-cv-website/assets/swiss-mountains.png 'Dall-E image of the Swiss alps')
+![Dall-E image of Swiss Alps](/assets/swiss-mountains.png 'Dall-E image of the Swiss alps')
 
 ## What I'm doing
 

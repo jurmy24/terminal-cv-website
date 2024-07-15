@@ -2,7 +2,6 @@
   "name": "terminal-cv-website",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://jurmy24.github.io/terminal-cv-website/",
   "type": "module",
   "scripts": {
     "dev": "vite",

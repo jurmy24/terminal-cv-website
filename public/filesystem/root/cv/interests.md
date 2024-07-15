@@ -4,12 +4,12 @@ Alright, this is my **favourite** page. It's already quite obvious that I quite 
 
 ## Scuba diving
 
-![Me in Smögen on a scuba trip](/terminal-cv-website/assets/scuba.png 'Me in Smögen on a scuba trip')
+![Me in Smögen on a scuba trip](/assets/scuba.png 'Me in Smögen on a scuba trip')
 I'm not a super experienced diver, having done around 20 dives in various places with the **PADI open water license**. My favorite dive site is Turtle City but one day I would like to go back to Smögen (where the image was taken) to do a winter dive. Apparently when there is ice the visibility improves significantly.
 
 ## Mountain stuff
 
-![Oeschinensee on a partially sunny day](/terminal-cv-website/assets/mountain.png 'Oeschinensee on a partially sunny day')
+![Oeschinensee on a partially sunny day](/assets/mountain.png 'Oeschinensee on a partially sunny day')
 
 If I'm not 18 meters underwater I do like being around 2500 meters above it. I love hiking and skiing, which is one of the main reasons why I decided to do my exchange at EPFL in Switzerland. With frequent trains from Lausanne, it was easy to get deep into the alps. The image above was taken during a trip to Oeschinensee in Switzerland where we got to take a dip in the cold turquoise water.
 
