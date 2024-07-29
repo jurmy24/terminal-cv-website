@@ -5,13 +5,13 @@
     >
         <!-- Terminal output-->
         <div v-for="(item, index) in history" :key="index">
-            <div class="flex gap-2 items-center justify-start my-2">
+            <div class="flex gap-2 items-center justify-start my-2 mr-4">
                 <Ghost class="min-w-6 min-h-6" />
                 <span class="text-current font-bold text-xl">~</span>
                 <span>{{ item.command }}</span>
             </div>
 
-            <div v-if="Array.isArray(item.output) && item.output.length > 1" class="text-xs">
+            <div v-if="Array.isArray(item.output) && item.output.length > 1" class="text-xs mr-4">
                 <div v-if="item.output[0].name">
                     <div v-for="output in item.output" :key="output.name">
                         <span
