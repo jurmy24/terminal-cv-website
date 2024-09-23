@@ -7,12 +7,12 @@
             <!-- Terminal -->
             <Terminal @file-changed="fetchMarkdownContent" />
             <!-- Terminal info text box -->
-            <MdViewBox :mdContent="mdTerminalContent" class="w-full h-1/3" />
+            <MdViewBox :mdContent="mdTerminalContent" class="w-full h-1/3 overflow-x-hidden" />
         </div>
         <div v-else class="flex flex-col space-y-4 align-middle">
             <TitleComponent />
             <!-- Terminal info text box -->
-            <MdViewBox :mdContent="mdTerminalContent" class="w-full pb-0" />
+            <MdViewBox :mdContent="mdTerminalContent" class="w-full pb-0 overflow-x-hidden" />
         </div>
         <!-- Markdown content -->
         <MdBox :mdContent="mdContent" :currentFileName="currentFileName" class="w-full h-full" />

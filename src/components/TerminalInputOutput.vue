@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full bg-terminalBg overflow-scroll h-full mb-10 pb-10"
+        class="w-full bg-terminalBg overflow-y-scroll h-full mb-10 pb-10"
         ref="terminalContentContainer"
     >
         <!-- Terminal output-->
