@@ -1,6 +1,6 @@
 <template>
     <!-- Terminal info text box -->
-    <div class="md-view-box">
+    <div class="md-view-box hide-scrollbar">
         <div v-if="showPretty" v-html="markdownToHtml" class="p-4 md-view"></div>
         <div v-else class="p-4">
             <pre class="whitespace-pre-wrap break-words">
