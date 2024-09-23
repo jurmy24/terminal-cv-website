@@ -1,4 +1,5 @@
 import './styles/style.css'
+import './styles/scrollbar.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
