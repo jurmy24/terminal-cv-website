@@ -1,5 +1,5 @@
 <template>
-    <div class="flex font-sans md:h-screen h-full w-full">
+    <div class="flex font-sans md:h-screen h-full w-full overflow-x-hidden">
         <!-- Side Bar -->
         <SideBar :toggleDark="toggleDark" :isDark="useDark" />
         <div class="md:ml-16 md:mt-0 mt-16 ml-0 flex flex-col md:w-full">
