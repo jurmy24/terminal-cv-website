@@ -15,7 +15,8 @@ export const fileSystem = {
         projects: {
             'terminal-website.md': 'filesystem/root/projects/terminal-website.md',
             'twiga.md': 'filesystem/root/projects/twiga.md',
-            'utter.md': 'filesystem/root/projects/utter.md'
+            'utter.md': 'filesystem/root/projects/utter.md',
+            'placeholder.md': 'filesystem/root/projects/placeholder.md'
         }
     }
 }

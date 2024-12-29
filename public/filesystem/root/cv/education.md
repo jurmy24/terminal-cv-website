@@ -1,5 +1,9 @@
 # Education
 
+### CentraleSupélec ([CS](https://www.centralesupelec.fr/en)), France
+
+-   Exchange studies in Mechanical Engineering (2025)
+
 ### Kungliga Tekniska Högskolan ([KTH](https://kth.se/)), Sweden
 
 -   BSc Mechanical Engineering (2021-2025) **GPA:4.9/5**

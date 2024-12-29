@@ -1,45 +1,38 @@
 # Skills
 
-## 🔧 Back-End Development
+## 🔧 Back-End
 
 -   AWS
-    -   Lambda 🚀
-    -   Bedrock 🏞️
-    -   OpenSearch Service 🔍
 -   NestJS 🌐
--   Python Flask 🐍
+-   FastAPI/Flask 🐍
+-   ChromaDb 💾
+-   SQLModel, SQLAlchemy, Alembic
+-   Postgres, Pgvector
+-   Neon Tech
+-   Docker
+-   Firebase 🔥
 
-## 🗄️ Databases
-
--   ElasticSearch Vector Database 📚
--   ChromaDB Vector Database 💾
-
-## 🎨 Front-End Development
+## 🎨 Front-End
 
 -   VueJS 🖼️
 -   TailwindCSS 💅
 -   React (but just a little) ⚛️
 
-## 📱 Mobile Development
+## 📱 Mobile
 
 -   Swift 🍏
 -   React Native 📲
 
-## 🛠️ CAD Software
+## 🛠️ CAD
 
 -   NX 🧩
 -   SolidEdge 🖥️
-
-## 📂 Productivity Tools
-
--   Notion 🗒️
--   Google Drive 🌐
--   Microsoft Suite 💼
--   Monday.com 📅
 
 ## 🚀 Emerging Technologies
 
 -   Retrieval-Augmented Generation (RAG) 🧠
 -   LLMs (Large Language Models) 🤖
+-   Generative 3D
+-   Lovable - GPT Engineer
 
 I'm probably forgetting some stuff but I'll add that over time.

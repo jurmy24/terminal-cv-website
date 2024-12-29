@@ -6,20 +6,7 @@ Twiga is a WhatsApp chatbot designed specifically for Tanzanian teachers. I made
 
 ## Project Overview
 
-Twiga makes use of a RAG pipeline to provide teachers with customized educational exercises and resources. The chatbot simplifies the process of generating course-appropriate questions and exercises, ensuring they align with the Tanzanian national curriculum. The idea is that it can be used for a multitude of educational applications such as generating exams, lesson plans, searching for textbook info, etc.
-
-## Key Features
-
--   **Custom Exercise Generation**: Twiga generates exercises that match the format of existing ones found in Tanzania's national examinations and textbooks.
--   **Easy Integration**: The chatbot is designed for seamless deployment on WhatsApp, making it easily accessible to teachers.
--   **Contextual Relevance**: Ensures that generated questions are answerable using knowledge from the textbooks and provide the appropriate level of challenge.
-
-## Technical Development
-
-The technical development of Twiga involved several key components:
-
--   **RAG Pipeline**: Implementing a sophisticated Retrieval-Augmented Generation system using rerankers, query-preprocessors, hybrid retrieval, and few-shot prompting.
--   **WhatsApp Integration**: Ensuring smooth deployment and user experience on the WhatsApp platform using Python Flask API.
+Twiga makes use of RAG to provide teachers with customized educational exercises and resources. The chatbot simplifies the process of generating course-appropriate questions and exercises, ensuring they align with the Tanzanian national curriculum. The idea is that it can be used for a multitude of educational applications such as generating exams, lesson plans, searching for textbook info, etc. We make it available to Tanzanian teachers for free directly in WhatsApp.
 
 ## Field Study
 
@@ -37,3 +24,6 @@ This project is now collaborative effort involving:
 ## Get Involved
 
 We are always looking for more insights and support to improve Twiga. If you're interested in contributing or learning more, please reach out!
+
+![github](https://github.com/Tanzania-AI-Community/twiga)
+![discord](https://discord.gg/bCe2HfZY2C)
