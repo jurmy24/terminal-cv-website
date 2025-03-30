@@ -43,3 +43,4 @@ You'll get more details about these projects if you head over to the projects fo
 -   🌿 **Dendrite**: Early developer for 2 months building webscrapers with Scrapy, ChromaDB, and GPT for website indexation and information retrieval
 -   💻 **This website**: Built the thing you're looking at right now, an interactive terminal and file system for showcasing my CV and projects using VueJS and TailwindCSS.
 -   🏆 **KTH AI Society Nordea Hackathon**: Built a RAG pipeline using AWS lambda, bedrock, and OpenSearch for dynamic website definitions for Nordea which won first prize.
+-   🔍 **Placeholder**: Building a web-based software tool for robotics. Vision is still stealthy but I got some fun prototypes.
