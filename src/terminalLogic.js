@@ -20,18 +20,22 @@ const handleCommand = (command) => {
         case 'ls':
         case 'dir':
             listFiles()
-            break
+            return null
         case 'cd':
             changeDirectory(arg)
-            break
+            return null
+        case 'pwd':
+            printWorkingDirectory()
+            return null
         case 'view':
             viewFile(arg)
-            break
+            return null
         case 'help':
-            showHelp()
-            break
+            state.output = ['Opening help modal...']
+            return { showHelp: true }
         default:
             state.output = [`Unknown command: ${cmd}`]
+            return null
     }
 }
 
@@ -72,14 +76,8 @@ const viewFile = (fileName) => {
     }
 }
 
-const showHelp = () => {
-    state.output = [
-        '- Navigate: Use "cd <foldername>" to move into another folder. Use "cd .." to back a folder.',
-        '- List Files: Use "ls" or "dir" to see a list of content in the current folder.',
-        '- Open Files: Use "view <filename>" to open a file.',
-        '- Clear Terminal: Use "clear" to empty the terminal.',
-        '- Help: Type "help" to read this stuff again.'
-    ]
+const printWorkingDirectory = () => {
+    state.output = [`/${state.currentPath.join('/')}`]
 }
 
 export default {

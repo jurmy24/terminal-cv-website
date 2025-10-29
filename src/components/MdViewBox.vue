@@ -22,7 +22,7 @@ hljs.registerLanguage('markdown', markdown)
 
 const markdowner = new MarkdownIt({
     // Enable HTML tags in source
-    html: false,
+    html: true,
     // Convert '\n' in paragraphs into <br>
     breaks: true,
     // Autoconvert URL-like text to links

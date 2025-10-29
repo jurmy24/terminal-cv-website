@@ -29,7 +29,9 @@
     }
 
     .md-view img {
-        @apply cursor-pointer w-3/4 my-4 mx-auto shadow-lg rounded-lg;
+        @apply my-4 mx-auto shadow-lg rounded-lg;
+        max-width: 75%;
+        height: auto;
     }
 
     .md-view i {

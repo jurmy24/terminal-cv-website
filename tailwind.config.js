@@ -62,7 +62,17 @@ export default {
             fontFamily: {
                 BigBlueTermMono: ['BigBlueTermMonoRegular'],
                 ProFontIIxNerdFontRegular: ['ProFontIIxNerdFontRegular'],
-                mono: ['Monaco']
+                mono: ['Monaco'],
+                'github-mono': [
+                    'ui-monospace',
+                    'SFMono-Regular',
+                    'SF Mono',
+                    'Menlo',
+                    'Consolas',
+                    'Liberation Mono',
+                    'Ubuntu Mono',
+                    'monospace'
+                ]
             }
         }
     },

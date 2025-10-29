@@ -1,21 +1,24 @@
 <template>
     <div
-        class="md:w-full w-screen h-full pb-10 p-4 pt-10 flex md:space-x-10 md:flex-row md:space-y-0 space-y-4 flex-col md:overflow-y-scroll"
+        class="md:w-full w-screen h-full py-4 px-4 flex md:space-x-4 md:flex-row md:space-y-0 space-y-4 flex-col md:overflow-y-scroll"
     >
-        <div v-if="width >= 768" class="flex md:w-1/2 flex-col space-y-4">
-            <TitleComponent />
+        <div v-if="width >= 768" class="flex md:w-1/3 h-full flex-col">
             <!-- Terminal -->
             <Terminal @file-changed="fetchMarkdownContent" />
-            <!-- Terminal info text box -->
-            <MdViewBox :mdContent="mdTerminalContent" class="w-full h-1/3 overflow-x-hidden hide-scrollbar" />
         </div>
         <div v-else class="flex flex-col space-y-4 align-middle">
-            <TitleComponent />
             <!-- Terminal info text box -->
-            <MdViewBox :mdContent="mdTerminalContent" class="w-full pb-0 overflow-x-hidden hide-scrollbar" />
+            <MdViewBox
+                :mdContent="mdTerminalContent"
+                class="w-full pb-0 overflow-x-hidden hide-scrollbar"
+            />
         </div>
         <!-- Markdown content -->
-        <MdBox :mdContent="mdContent" :currentFileName="currentFileName" class="w-full h-full" />
+        <MdBox
+            :mdContent="mdContent"
+            :currentFileName="currentFileName"
+            class="md:w-2/3 w-full h-full"
+        />
     </div>
 </template>
 
@@ -23,7 +26,6 @@
 import MdBox from '../components/MdBox.vue'
 import MdViewBox from '../components/MdViewBox.vue'
 import Terminal from '../components/Terminal.vue'
-import TitleComponent from '../components/Title.vue'
 import { useWindowSize } from '@vueuse/core'
 
 export default {
@@ -31,13 +33,11 @@ export default {
     components: {
         MdBox,
         Terminal,
-        TitleComponent,
         MdViewBox
     },
     data() {
         return {
-            mdTerminalContent:
-                'For those of you familiar with the terminal, this should be pretty intuitive. For the rest, feel free to type **`help`** into my terminal and press **↵ Enter** to learn about the commands you can write to use it. By the way, if you want to view one of my files, just type **`view`** along with the file name.',
+            mdTerminalContent: '',
             mdContent: '',
             error: null,
             currentFileName: 'about.md',
@@ -46,10 +46,6 @@ export default {
     },
     async created() {
         await this.fetchMarkdownContent('filesystem/root/about.md')
-        // if (this.width < 768) {
-        //     this.mdTerminalContent =
-        //         '# Welcome!\n If you want to use my terminal please visit me on a larger screen.'
-        // }
     },
     methods: {
         async fetchMarkdownContent(filePath) {
@@ -73,10 +69,7 @@ export default {
             handler(newWidth) {
                 if (newWidth < 768) {
                     this.mdTerminalContent =
-                        "# Welcome to my terminal! 😎\n If you want to use my terminal please visit on a larger screen. You could give it a shot in landscape mode but I wouldn't recommend it. Who uses a terminal on their phone anyways?"
-                } else {
-                    this.mdTerminalContent =
-                        'Welcome to my terminal! 😎 For those of you familiar with the it, this should be pretty intuitive. For the rest, feel free to type **`help`** into my terminal and press **↵ Enter** to learn about the commands you can write to use it. By the way, if you want to view one of my files, just type **`view`** along with the file name.'
+                        "# Welcome! \n If you want to use my terminal please visit on a larger screen. You could give it a shot in landscape mode but I wouldn't recommend it. Who uses a terminal on their phone anyways?"
                 }
             },
             immediate: true

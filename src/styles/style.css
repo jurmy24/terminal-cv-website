@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+    :root {
+        --font-dm-mono: 'DM Mono', ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+        --font-github-mono: ui-monospace, 'SFMono-Regular', 'SF Mono', Menlo, Consolas, 'Liberation Mono', 'Ubuntu Mono', monospace;
+    }
+    
     @font-face {
         font-family: BigBlueTermMonoRegular;
         src: url(/fonts/BigBlueTermPlusNerdFontMono-Regular.ttf);
@@ -11,6 +16,9 @@
         font-family: ProFontIIxNerdFontRegular;
         src: url(/fonts/ProFontIIxNerdFontPropo-Regular.ttf);
     }
+    /* Import DM Mono from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+    
     .sidebar-icon {
         @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto border border-borderLight dark:border-borderDark
                 text-purpleHighlight hover:bg-buttonBgHoverLight dark:hover:bg-buttonBgHoverDark rounded-md transition-all duration-300 ease-linear
@@ -45,7 +53,7 @@
     }
 
     .md-button {
-        @apply font-ProFontIIxNerdFontRegular text-sm px-4 py-1 rounded-l border border-borderLight dark:border-borderDark  text-terminalTextLight hover:bg-buttonBgHoverLight dark:text-terminalTextDark dark:hover:bg-buttonBgHoverDark transition-all duration-300 ease-linear cursor-pointer;
+        @apply font-mono text-sm px-4 py-1 rounded-l border border-borderLight dark:border-borderDark  text-terminalTextLight hover:bg-buttonBgHoverLight dark:text-terminalTextDark dark:hover:bg-buttonBgHoverDark transition-all duration-300 ease-linear cursor-pointer;
     }
 }
 
