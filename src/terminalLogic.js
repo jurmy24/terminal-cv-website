@@ -5,7 +5,7 @@ import { fileSystem } from './fileStructure'
 const state = {
     currentPath: ['root'],
     fileSystem,
-    currentFile: fileSystem.root['about.md'],
+    currentFile: fileSystem.root['intro.md'],
     output: []
 }
 

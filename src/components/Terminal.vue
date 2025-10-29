@@ -1,9 +1,12 @@
 <template>
-    <div class="h-5/6 my-auto overflow-hidden">
-        <div
-            class="h-full p-4 pr-0 border border-borderLight dark:border-borderDark rounded-md shadow-lg dark:bg-terminalBgDark bg-terminalBgLight font-ProFontIIxNerdFontRegular dark:text-terminalTextDark text-terminalTextLight overflow-hidden"
-        >
-            <p class="h-min-12">Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
+    <div class="h-full flex flex-col bg-secondary text-foreground font-dm-mono">
+        <!-- Terminal Header Info -->
+        <div class="px-4 py-2 bg-gray-800/30 border-b border-gray-700/20">
+            <p class="text-foreground">Last login: {{ currentDate }} on IPv4 {{ ipAddress }}</p>
+        </div>
+
+        <!-- Terminal Content -->
+        <div class="flex-1 overflow-hidden">
             <TerminalInputOutput :commandOutput="output" @submit-command="handleCommand" />
         </div>
     </div>

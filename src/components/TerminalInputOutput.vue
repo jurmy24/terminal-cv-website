@@ -1,67 +1,74 @@
 <template>
     <div
-        class="w-full bg-terminalBg overflow-y-scroll h-full mb-10 pb-10 hide-scrollbar"
+        class="w-full h-full bg-secondary overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800"
         ref="terminalContentContainer"
     >
-        <!-- Terminal output-->
-        <div v-for="(item, index) in history" :key="index">
-            <div class="flex gap-2 items-center justify-start my-2 mr-4">
-                <Ghost class="min-w-6 min-h-6" />
-                <span class="text-current font-bold text-xl">~</span>
-                <span>{{ item.command }}</span>
+        <div class="p-4 space-y-2">
+            <!-- Terminal output-->
+            <div v-for="(item, index) in history" :key="index" class="space-y-1">
+                <!-- Command line -->
+                <div class="flex items-center space-x-2">
+                    <span class="text-accent font-bold">~</span>
+                    <span class="text-foreground">{{ item.command }}</span>
+                </div>
+
+                <!-- Command output -->
+                <div v-if="Array.isArray(item.output) && item.output.length > 1" class="ml-6">
+                    <div v-if="item.output[0].name">
+                        <div v-for="output in item.output" :key="output.name" class="py-0.5">
+                            <span
+                                :class="
+                                    output.type === 'folder'
+                                        ? 'text-purple-400 font-semibold'
+                                        : 'text-foreground'
+                                "
+                            >
+                                {{ output.name }}
+                            </span>
+                        </div>
+                    </div>
+                    <div v-else>
+                        <div v-for="output in item.output" :key="output" class="py-0.5">
+                            <p class="text-foreground">{{ output }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    v-else-if="Array.isArray(item.output) && item.output.length <= 1"
+                    class="ml-6 text-sm"
+                >
+                    <span class="text-foreground">{{ item.output[0] }}</span>
+                </div>
+                <div v-else class="ml-6 text-sm">
+                    <span class="text-foreground">{{ item.output }}</span>
+                </div>
             </div>
 
-            <div v-if="Array.isArray(item.output) && item.output.length > 1" class="text-xs mr-4">
-                <div v-if="item.output[0].name">
-                    <div v-for="output in item.output" :key="output.name">
-                        <span
-                            :class="
-                                output.type === 'folder' ? 'text-purpleHighlight' : 'text-current'
-                            "
-                        >
-                            {{ output.name }}
-                        </span>
-                    </div>
-                </div>
-                <div v-else>
-                    <div v-for="output in item.output" :key="output">
-                        <p class="text-current py-1">{{ output }}</p>
-                    </div>
-                </div>
+            <!-- Terminal input-->
+            <div class="flex items-center space-x-2 text-sm">
+                <Ghost class="w-4 h-4 text-green-400 flex-shrink-0" />
+                <span class="text-blue-400 font-bold">~</span>
+                <form @submit.prevent="emitCommand" class="flex-1">
+                    <input
+                        class="border-0 outline-0 bg-transparent w-full text-foreground placeholder-gray-500"
+                        v-model="command"
+                        placeholder="Type a command..."
+                        type="text"
+                        ref="commandInput"
+                        autocomplete="off"
+                        spellcheck="false"
+                    />
+                </form>
             </div>
-            <div v-else-if="Array.isArray(item.output) && item.output.length <= 1" class="text-xs">
-                <span class="text-current">{{ item.output[0] }}</span>
-            </div>
-            <div v-else class="text-xs">
-                <span class="text-current">{{ item.output }}</span>
-            </div>
-        </div>
-        <!-- Terminal input-->
-        <div class="flex gap-2 items-center justify-start my-2">
-            <Ghost class="min-w-6 min-h-6" />
-            <span class="text-current font-bold text-xl">~</span>
-            <form @submit.prevent="emitCommand" class="w-full">
-                <input
-                    class="border-0 outline-0 bg-transparent w-full"
-                    v-model="command"
-                    placeholder="Type a command..."
-                    type="text"
-                    ref="commandInput"
-                />
-            </form>
         </div>
     </div>
 </template>
 
 <script>
-import Ghost from './icons/Ghost.vue'
 import { nextTick } from 'vue'
 
 export default {
     name: 'TerminalInputOutput',
-    components: {
-        Ghost
-    },
     props: {
         commandOutput: {
             type: Array,
@@ -73,6 +80,9 @@ export default {
             command: '',
             history: []
         }
+    },
+    mounted() {
+        this.focusInput()
     },
     methods: {
         emitCommand() {
@@ -91,6 +101,14 @@ export default {
                 const terminalContent = this.$refs.terminalContentContainer
                 if (terminalContent) {
                     terminalContent.scrollTop = terminalContent.scrollHeight
+                }
+            })
+        },
+        focusInput() {
+            nextTick(() => {
+                const input = this.$refs.commandInput
+                if (input) {
+                    input.focus()
                 }
             })
         }

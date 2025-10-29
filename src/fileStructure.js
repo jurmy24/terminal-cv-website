@@ -3,7 +3,7 @@
 // Todo: make this more adaptable to new files that may be added (i.e. not hardcoding the file paths)
 export const fileSystem = {
     root: {
-        'about.md': 'filesystem/root/about.md',
+        'intro.md': 'filesystem/root/intro.md',
         'contact.md': 'filesystem/root/contact.md',
         cv: {
             'about-me.md': 'filesystem/root/cv/about-me.md',
