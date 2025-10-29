@@ -1,14 +1,14 @@
-# Welcome 👋
+# Heyo, I'm victor oldensand
 
-![Avatar image of Victor in scuba gear](/assets/victor-avatar.png 'Victor avatar in scuba gear')
+<img src="/assets/victor-avatar.png" alt="Avatar image of Victor in scuba gear" title="Victor avatar in scuba gear" width="250" />
 
 ## Up for a challenge?
 
-I used to think the terminal was confusing, so I tried to avoid it. At university it crept up on me, and I learned that in its most basic form it's not all that complicated. That said, I hope that this incredibly **over-engineered CV** can serve as a first step for those fearful of getting technical.
+The average computer user rarely gets to use the terminal. If you've never used it before, here's your chance to learn some simple commands by navigating my CV. It's not complicated I promise. With that said, I hope that this **over-engineered resumé** can serve as a first step for those fearful of getting technical.
 
 ## > Nah
 
-If navigating my CV file system seems boring you can essentially find the same information on my LinkedIn or GitHub accounts.
+If that seems boring you can pretty much find the same information on my LinkedIn or GitHub accounts.
 
 -   👨‍💻 **GitHub**: [jurmy24](https://github.com/jurmy24)
 -   👔 **LinkedIn**: [victor oldensand](https://www.linkedin.com/in/victor-oldensand/)
